@@ -15,7 +15,9 @@ Use vscode launcher and play with `Launch local`
 
 _you may need to place an api-key on the env of launch.json file._
 
+## :wink: Testing
 
+Minor tests are present. For testing run `go test` inside routes folder. 
 
 ## 📦 Used packages
 
