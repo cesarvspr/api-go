@@ -13,9 +13,9 @@ Run project by this command:
 
 Use vscode launcher and play with `Launch local`
 
-_you may need to place an api-key on the launch.json file._
+_you may need to place an api-key on the env of launch.json file._
 
-5. Go to API Docs page (Swagger): [127.0.0.1:4555/swagger/index.html](http://127.0.0.1:4555/swagger/index.html)
+
 
 ## 📦 Used packages
 
@@ -29,6 +29,8 @@ _you may need to place an api-key on the launch.json file._
 | [swaggo/swag](https://github.com/swaggo/swag)                         | `v1.8.2`   | utils      |
 | [google/uuid](https://github.com/google/uuid)                         | `v1.3.0`   | utils      |
 | [go-playground/validator](https://github.com/go-playground/validator) | `v10.10.0` | utils      |
+
+## Go to API Docs page (Swagger): [127.0.0.1:4555/swagger/index.html](http://127.0.0.1:4555/swagger/index.html)
 
 ### ./app
 
@@ -56,7 +58,7 @@ _you may need to place an api-key on the launch.json file._
 
 **Folder with platform-level logic**. This directory contains all the platform-level logic that will build up the actual project, like _setting up the database_ or _cache server instance_ and _storing migrations_.
 
-- `./platform/database` folder with database setup functions (by default, CLoudant)
+- `./platform/database` folder with database setup functions (by default, Cloudant)
 
 ## ⚙️ Configuration
 
