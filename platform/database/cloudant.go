@@ -9,7 +9,7 @@ var client *cloudantv1.CloudantV1
 var dbName = "books"
 var ContentType = "application/json"
 
-// CloudantConnection func for connection to PostgreSQL database.
+// CloudantConnection func for connection to Cloudant NoSQL database.
 func CloudantConnection() *cloudantv1.CloudantV1 {
 	var err error
 	// Check if database connection already exists.
