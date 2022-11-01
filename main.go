@@ -7,7 +7,6 @@ import (
 	"github.com/cesarvspr/api-go/pkg/middleware"
 	"github.com/cesarvspr/api-go/pkg/routes"
 	"github.com/cesarvspr/api-go/pkg/utils"
-	"github.com/cesarvspr/api-go/platform/database"
 
 	"github.com/gofiber/fiber/v2"
 
@@ -29,9 +28,6 @@ import (
 // @in header
 // @name Authorization
 func main() {
-
-	// setup db.
-	database.OpenDBConnection()
 
 	// Define Fiber config.
 	config := configs.FiberConfig()
