@@ -8,6 +8,14 @@ import (
 	"github.com/cesarvspr/api-go/pkg/utils"
 )
 
+// This interface is used to decouple from any particular database library.
+type store interface {
+
+    CreateBook(book *models.Book) (*cloudantv1.DocumentResult, error) 
+
+	GetAllBooks() ([]map[string]interface{}, error)
+}
+
 var client *cloudantv1.CloudantV1
 var dbName = "books"
 var ContentType = "application/json"
